@@ -1,0 +1,7 @@
+def removeDuplicates(a):
+  for i in a:
+      end = a.count(i)
+      if end>1:
+          del a[a.index(i):(a.index(i)+end-1)]
+
+  return len(a)
